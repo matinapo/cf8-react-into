@@ -1,0 +1,22 @@
+package ch7;
+
+public class ReverseStringApp {
+
+    public static void main(String[] args) {
+        String str = "Athens University of Economics and Business";
+
+    }
+
+    public static String reverse(String str) {
+        StringBuilder reversed = new StringBuilder();
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed.append(str.charAt(i));
+        }
+        return reversed.toString(); // μετατρέπει τον StringBuilder σε String
+    }
+
+    public static String reverse2(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
+}

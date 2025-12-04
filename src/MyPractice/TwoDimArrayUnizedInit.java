@@ -1,0 +1,15 @@
+package MyPractice;
+
+public class TwoDimArrayUnizedInit {
+
+    public static void main(String[] args) {
+        int[][] grid = {{1, 2}, {3, 4}, {5, 6}}; // 3 x 2
+
+        for (int[] row : grid) {
+            for (int col : row) {
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+    }
+}
